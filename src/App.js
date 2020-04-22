@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import BackgroundImg from './img/BackgroundFirstTry2.jpg';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import FabNav from './components/FabNav';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
             <Route path="/projects" component={Projects} />
             <Route path="/blog" component={Blog} />
             <Route path="/contact" component={Contact} />
+            <FabNav />
           </div>
         </div>
       </div>

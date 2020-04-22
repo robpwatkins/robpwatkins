@@ -1,0 +1,20 @@
+:root {
+  --nav-bg-opaque: rgba(255, 255, 255, 0.877);
+}
+
+.fab-nav-box {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* height: 0%; */
+  background: var(--nav-bg-opaque);
+  transition: height .175s ease-in-out;
+}

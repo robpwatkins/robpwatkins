@@ -2,7 +2,22 @@
   --overlay2: #41414254;
 }
 
+.about-container {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  padding: 10px 10px 0 10px;
+}
+
 .left-box {
+  display: none;
   flex: 1;
   height: 100%;
   /* border: 5px solid white; */
@@ -20,14 +35,9 @@
 }
 
 .left-box-overlay {
-  /* ---------- for mobile -------------*/
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* ---------- for mobile -------------*/
   width: 100%;
   height: 100%;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
   /* background: var(--overlay2); */
   border-radius: 3px;
   /* box-shadow: inset 0px 0px 10px 2px var(--shadow); */
@@ -36,13 +46,13 @@
 .skills {
   display: flex;
   flex-direction: column;
-  height: 25vh;
+  height: 25%;
   justify-content: space-around;
 }
 
 .skill-box {
   display: flex;
-  width: 98%;
+  width: 100%;
   align-items: center;
   justify-content: flex-start;
   font-size: 14px;
@@ -100,19 +110,8 @@
   width: 55%;
 }
 
-  /* ---------- for mobile -------------*/
-.mobile-blurbs {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 70vh;
-}
-  /* ---------- for mobile -------------*/
-
 .right-box {
-  /* ---------- for mobile -------------*/
   display: none;
-  /* ---------- for mobile -------------*/
   flex-direction: column;
   flex: 2;
   height: 95%;
