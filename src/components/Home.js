@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import '../components/Home.css';
 import Face from '../img/first-name-face-cropper2.png';
 
 const Home = () => {
