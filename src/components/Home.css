@@ -1,0 +1,41 @@
+.title-box {
+  display: flex;
+  width: 100%;
+  height: 77vh;
+  /* margin: -7px 0 0 0; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.first-name {
+  position: relative;
+  height: 150px;
+  font-size: 155px;
+  font-weight: 900;
+}
+
+.first-name-face {
+  position: absolute;
+  padding: 15px 0 0 2px;
+  z-index: 1;
+}
+
+.first-name-face img {
+  width: 96px;
+}
+
+.last-name {
+  height: 80px;
+  font-size: 70px;
+  font-weight: 900;
+}
+
+.title-box hr {
+  width: 65%;
+  margin: 3px 0 7px 0;
+  border-top: 3px solid white;
+}
+
+.web-dev {
+  font-size: 25px;
+}

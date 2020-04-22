@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import BackgroundImg from './img/BackgroundFirstTry2.jpg';
 import Nav from './components/Nav';
