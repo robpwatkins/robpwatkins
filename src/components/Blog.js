@@ -1,10 +1,50 @@
 import React from 'react';
+import './Blog.css';
+import DogBlogger1 from '../img/DogBlogger.jpg';
+import DogBlogger2 from '../img/DogBlogger2.jpg';
+import DogBlogger3 from '../img/DogBlogger3.jpg';
+import DogBlogger4 from '../img/DogBlogger4.jpeg';
 
 const Blog = () => {
   return (
-    <div>
-      <h1>Blog, here.</h1>
-    </div>
+    <div class="blog-container">
+      <div class="blog-box blog-box1">
+        <a href="https://medium.com/@robpwatkins/test-portfolio-blog-50d83b856c92">
+          <img src={DogBlogger1} alt="" />
+        </a>
+        <h3>Testing the Blog</h3>
+        <p>April 20, 2020</p>
+        <hr />
+        <p class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
+      </div>
+      <div class="blog-box blog-box2">
+        <a href="https://medium.com/@robpwatkins/test-portfolio-blog-50d83b856c92">
+          <img src={DogBlogger2} alt="" />
+        </a>
+        <h3>Testing the Blog</h3>
+        <p>April 20, 2020</p>
+        <hr />
+        <p class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
+      </div>
+      <div class="blog-box blog-box3">
+        <a href="https://medium.com/@robpwatkins/test-portfolio-blog-50d83b856c92">
+          <img src={DogBlogger3} alt="" />
+        </a>
+        <h3>Testing the Blog</h3>
+        <p>April 20, 2020</p>
+        <hr />
+        <p class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
+      </div>
+      <div class="blog-box blog-box4">
+        <a href="https://medium.com/@robpwatkins/test-portfolio-blog-50d83b856c92">
+          <img src={DogBlogger4} alt="" />
+        </a>
+        <h3>Testing the Blog</h3>
+        <p>April 20, 2020</p>
+        <hr />
+        <p class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
+      </div>
+    </div> 
   )
 }
 
