@@ -18,3 +18,10 @@
   background: var(--nav-bg-opaque);
   transition: height .175s ease-in-out;
 }
+
+.background ul {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  color: black;
+}
