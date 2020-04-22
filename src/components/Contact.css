@@ -1,0 +1,101 @@
+.contact-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.postcard-container {
+  width: 85%;
+  height: 90%;
+  border: 10px solid white;
+  border-radius: 15px;
+}
+
+/* .postcard-container:hover {
+  box-shadow: 5px 5px 10px var(--shadow);
+} */
+
+.postcard {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 25px 0;
+  /* background: var(--bg-opaque); */
+  background: white;
+  border: 1px dashed #999FA9;
+  border-radius: 5px;
+}
+
+.postcard-left, .postcard-right {
+  flex: 1;
+  /* border: 3px solid white; */
+  border-radius: 3px;
+}
+
+.postcard-left {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  /* margin: 25px 0; */
+  border-right: 1px solid #999FA9;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.mountain-man {
+  width: 80%;
+  height: 100%;
+  /* background-image: url(./img/MountainManWellAdjustedNoTimehopCropOriginal.png); */
+  /* background-image: url(./img/MountainManWellAdjustedNoTimehop.png); */
+  /* filter: blur(1px); */
+  background-size: cover;
+  /* background-position: bottom 0px left -180px; */
+  background-repeat: no-repeat;
+  /* border: 3px solid white; */
+  border-radius: 18px;
+}
+
+.mountain-man-overlay {
+  width: 100%;
+  height: 100%;
+  background: var(--overlay2);
+  border-radius: 18px;
+  border: 12px solid var(--border-dark);
+  /* box-shadow: inset 0 0 15px 0px var(--shadow); */
+}
+
+.postcard-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.postcard-right form {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 100%;
+}
+
+input, textarea {
+  font-size: 18px;
+  margin: 10px 0;
+  /* border-radius: 3px; */
+}
+
+input {
+  height: 10%;
+}
+
+textarea {
+  height: 70%;
+}
+
+button {
+  width: 100px;
+  height: 25px;
+}
