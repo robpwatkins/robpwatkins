@@ -1,9 +1,24 @@
 import React from 'react';
+import '../components/Projects.css';
 
 const Projects = () => {
   return (
-    <div>
-      <h1>Projects, here.</h1>
+    <div className="projects-container">
+      <div className="projects-nav">
+        <ul>
+          <li className="react-li">React</li>
+          <li>Node/MySQL</li>
+          <li>Something</li>
+        </ul>
+      </div>
+      <div className="projects-box">
+        <div className="project project1"></div>
+        <div className="project project2"></div>
+        <div className="project project3"></div>
+        <div className="project project4"></div>
+        <div className="project project5"></div>
+        <div className="project project6"></div>
+      </div>
     </div>
   )
 }
