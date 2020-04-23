@@ -7,42 +7,42 @@ import DogBlogger4 from '../img/DogBlogger4.jpeg';
 
 const Blog = () => {
   return (
-    <div class="blog-container">
-      <div class="blog-box blog-box1">
+    <div className="blog-container">
+      <div className="blog-box blog-box1">
         <a href="https://medium.com/@robpwatkins/test-portfolio-blog-50d83b856c92">
           <img src={DogBlogger1} alt="" />
         </a>
         <h3>Testing the Blog</h3>
         <p>April 20, 2020</p>
         <hr />
-        <p class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
+        <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
       </div>
-      <div class="blog-box blog-box2">
+      <div className="blog-box blog-box2">
         <a href="https://medium.com/@robpwatkins/test-portfolio-blog-50d83b856c92">
           <img src={DogBlogger2} alt="" />
         </a>
         <h3>Testing the Blog</h3>
         <p>April 20, 2020</p>
         <hr />
-        <p class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
+        <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
       </div>
-      <div class="blog-box blog-box3">
+      <div className="blog-box blog-box3">
         <a href="https://medium.com/@robpwatkins/test-portfolio-blog-50d83b856c92">
           <img src={DogBlogger3} alt="" />
         </a>
         <h3>Testing the Blog</h3>
         <p>April 20, 2020</p>
         <hr />
-        <p class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
+        <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
       </div>
-      <div class="blog-box blog-box4">
+      <div className="blog-box blog-box4">
         <a href="https://medium.com/@robpwatkins/test-portfolio-blog-50d83b856c92">
           <img src={DogBlogger4} alt="" />
         </a>
         <h3>Testing the Blog</h3>
         <p>April 20, 2020</p>
         <hr />
-        <p class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
+        <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
       </div>
     </div> 
   )
