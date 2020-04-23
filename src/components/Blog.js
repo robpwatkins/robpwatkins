@@ -12,37 +12,45 @@ const Blog = () => {
         <a href="https://medium.com/@robpwatkins/test-portfolio-blog-50d83b856c92">
           <img src={DogBlogger1} alt="" />
         </a>
-        <h3>Testing the Blog</h3>
-        <p>April 20, 2020</p>
-        <hr />
-        <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
+        <div className="blog-info">
+          <h3>Testing the Blog</h3>
+          <p>April 20, 2020</p>
+          <hr />
+          <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing and gonna keep on typing here until it gets a lil onger . . .</p>
+        </div>
       </div>
       <div className="blog-box blog-box2">
         <a href="https://medium.com/@robpwatkins/test-portfolio-blog-50d83b856c92">
-          <img src={DogBlogger2} alt="" />
+          <img src={DogBlogger3} alt="" />
         </a>
-        <h3>Testing the Blog</h3>
-        <p>April 20, 2020</p>
-        <hr />
-        <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
+        <div className="blog-info">
+          <h3>Testing the Blog</h3>
+          <p>April 20, 2020</p>
+          <hr />
+          <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing and gonna keep on typing here until it gets a lil onger . . .</p>
+        </div>
       </div>
       <div className="blog-box blog-box3">
         <a href="https://medium.com/@robpwatkins/test-portfolio-blog-50d83b856c92">
-          <img src={DogBlogger3} alt="" />
+          <img src={DogBlogger2} alt="" />
         </a>
-        <h3>Testing the Blog</h3>
-        <p>April 20, 2020</p>
-        <hr />
-        <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
+        <div className="blog-info">
+          <h3>Testing the Blog</h3>
+          <p>April 20, 2020</p>
+          <hr />
+          <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing and gonna keep on typing here until it gets a lil onger . . .</p>
+        </div>
       </div>
       <div className="blog-box blog-box4">
         <a href="https://medium.com/@robpwatkins/test-portfolio-blog-50d83b856c92">
           <img src={DogBlogger4} alt="" />
         </a>
-        <h3>Testing the Blog</h3>
-        <p>April 20, 2020</p>
-        <hr />
-        <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
+        <div className="blog-info">
+          <h3>Testing the Blog</h3>
+          <p>April 20, 2020</p>
+          <hr />
+          <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing and gonna keep on typing here until it gets a lil onger . . .</p>
+        </div>
       </div>
     </div> 
   )

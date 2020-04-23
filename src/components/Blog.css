@@ -6,16 +6,19 @@
   /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
-  padding: 0 25px;
+  padding: 50px 25px 0 25px;
   /* overflow: scroll; */
   /* background: var(--bg-opaque); */
   border-radius: 10px;
 }
 
 .blog-box {
-  /* width: 45%; */
-  /* height: 48%; */
-  color: var(--text-inactive);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: 50%;
+  color: white;
 }
 
 /* .blog-box:hover {
@@ -33,7 +36,7 @@
 
 .blog-box hr {
   width: 30%;
-  border-top: 2px solid var(--text-inactive);
+  border-top: 2px solid white;
 }
 
 .blog-box .preview-text {
