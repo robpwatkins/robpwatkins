@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contact.css';
+import { TextField, Button } from '@material-ui/core';
 
 const Contact = () => {
   return (
@@ -13,10 +14,21 @@ const Contact = () => {
           </div>
           <div className="postcard-right">
             <form action="">
-              <input placeholder="name" type="text" />
-              <input placeholder="email" type="text" />
-              <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
-              <button>Send</button>
+              <TextField label="Name"></TextField>
+              <TextField 
+                style={{marginBottom: "35px"}} 
+                label="Email"
+                ></TextField>
+              <TextField 
+                label="Message" 
+                multiline 
+                rows={15}
+                variant="outlined"
+                ></TextField>
+              <Button
+                variant="contained"
+                style={{width: "15%", marginTop: "15px"}}
+                >Send</Button>
             </form>
           </div>
         </div>

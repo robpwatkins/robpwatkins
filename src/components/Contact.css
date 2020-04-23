@@ -81,21 +81,20 @@
   height: 100%;
 }
 
-input, textarea {
+/* input, textarea {
   font-size: 18px;
   margin: 10px 0;
-  /* border-radius: 3px; */
-}
+} */
 
-input {
+/* input {
   height: 10%;
 }
 
 textarea {
   height: 70%;
-}
-
+} */
+/* 
 button {
   width: 100px;
   height: 25px;
-}
+} */
