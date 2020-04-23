@@ -34,11 +34,9 @@ class FabNav extends React.Component {
     return (
       <div className="fab-nav-box">
         <div className="background" 
-          style={{height: `${this.state.height}`
-          }}>
+          style={{height: `${this.state.height}`}}>
           <ul 
-            style={{display: `${this.state.display}`
-            }}>
+            style={{display: `${this.state.display}`}}>
             <Link onClick={this.handleClick} to="/">
               <li className="home">Home</li>
             </Link>

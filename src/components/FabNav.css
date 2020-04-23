@@ -37,5 +37,6 @@
   height: 90%;
   font-size: 28px;
   font-weight: 500;
+  color: rgba(255, 255, 255, 0);
   transition: height .175s ease-in-out;
 }
