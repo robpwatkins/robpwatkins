@@ -40,3 +40,9 @@
   color: rgba(255, 255, 255, 0);
   transition: height .175s ease-in-out;
 }
+
+@media (min-width: 600px) {
+  .fab-nav-box {
+    display: none;
+  }
+}
