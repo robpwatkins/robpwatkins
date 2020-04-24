@@ -22,10 +22,12 @@
   align-items: center;
   list-style-type: none;
 }
-/* 
+
 .projects-nav li:hover {
   color: white;
-} */
+  transform: none;
+  cursor: pointer;
+}
 
 .react-li {
   color: white;
@@ -54,16 +56,17 @@
   display: none;
 }
 
-/* .project:hover {
-  box-shadow: 5px 5px 10px var(--shadow);
-} */
 
 @media (min-width: 768px) {
   .projects-nav {
     width: 35%;
   }
-
+  
   .projects-box {
     width: 50%;
+  }
+
+  .project:hover {
+    box-shadow: 5px 5px 10px var(--shadow);
   }
 }
