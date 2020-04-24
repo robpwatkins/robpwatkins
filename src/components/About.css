@@ -89,6 +89,7 @@
 
 .mobile-box h1 {
   font-size: calc(25px + 2vw);
+  font-weight: 600;
 }
 
 .mobile-box p {
@@ -163,7 +164,7 @@
   }
 
   .right-box h1 {
-    font-size: calc(20px + 2vw);
+    font-size: calc(21px + 3vw);
     font-weight: 600;
   }
 

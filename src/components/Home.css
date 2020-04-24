@@ -53,3 +53,35 @@
     width: 400px;
   }
 }
+
+@media (min-width: 768px) {
+  .title-box {
+    height: 65vh;
+  }
+
+  .first-name {
+    font-size: 195px;
+    height: 188px;
+  }
+
+  .first-name-face {
+    padding: 20px 0px 0 3px;
+  }
+
+  .first-name-face img {
+    width: 120px;
+  }
+
+  .last-name {
+    font-size: 90px;
+    height: 105px;
+  }
+
+  .title-box hr {
+    width: 480px;
+  }
+
+  .web-dev {
+    font-size: 35px;
+  }
+}
