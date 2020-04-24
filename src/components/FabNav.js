@@ -2,7 +2,7 @@ import React from 'react';
 import { Fab } from '@material-ui/core';
 import Add from '@material-ui/icons/Add';
 import './FabNav.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class FabNav extends React.Component {
   state = {
@@ -37,21 +37,42 @@ class FabNav extends React.Component {
           style={{height: `${this.state.height}`}}>
           <ul 
             style={{display: `${this.state.display}`}}>
-            <Link onClick={this.handleClick} to="/">
-              <li className="home">Home</li>
-            </Link>
-            <Link onClick={this.handleClick} to="/about">
-              <li className="about">About</li>
-            </Link>
-            <Link onClick={this.handleClick} to="/projects">
-              <li className="projects">Projects</li>
-            </Link>
-            <Link onClick={this.handleClick} to="/blog">
-              <li className="blog">Blog</li>
-            </Link>
-            <Link onClick={this.handleClick} to="/contact">
-              <li className="contact">Contact</li>
-            </Link>
+            <NavLink 
+              exact
+              to="/"
+              onClick={this.handleClick}
+              activeStyle={{transform: "scale(1.5)"}} 
+              >
+              <li>Home</li>
+            </NavLink>
+            <NavLink 
+              to="/about"
+              onClick={this.handleClick}
+              activeStyle={{transform: "scale(1.5)"}} 
+              >
+              <li>About</li>
+            </NavLink>
+            <NavLink 
+              to="/projects"
+              onClick={this.handleClick}
+              activeStyle={{transform: "scale(1.5)"}} 
+              >
+              <li>Projects</li>
+            </NavLink>
+            <NavLink 
+              to="/blog"
+              onClick={this.handleClick}
+              activeStyle={{transform: "scale(1.5)"}} 
+              >
+              <li>Blog</li>
+            </NavLink>
+            <NavLink 
+              to="/contact"
+              onClick={this.handleClick}
+              activeStyle={{transform: "scale(1.5)"}} 
+              >
+              <li>Contact</li>
+            </NavLink>
           </ul>
         </div>
         <Fab className="fabby" onClick={this.handleClick}>

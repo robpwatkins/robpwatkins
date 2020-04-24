@@ -35,10 +35,19 @@
   flex-direction: column;
   width: 100%;
   height: 90%;
+  align-items: center;
+  justify-content: space-evenly;
   font-size: 28px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0);
+  list-style: none;
   transition: height .175s ease-in-out;
+}
+
+.background a {
+  display: block;
+  text-decoration: none;
+  color: rgba(24, 26, 32, 0.555);
 }
 
 @media (min-width: 600px) {
