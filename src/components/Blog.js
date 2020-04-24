@@ -16,7 +16,7 @@ const Blog = () => {
           <h3>Testing the Blog</h3>
           <p>April 20, 2020</p>
           <hr />
-          <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing and gonna keep on typing here until it gets a lil onger . . .</p>
+          <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
         </div>
       </div>
       <div className="blog-box blog-box2">
@@ -27,7 +27,7 @@ const Blog = () => {
           <h3>Testing the Blog</h3>
           <p>April 20, 2020</p>
           <hr />
-          <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing and gonna keep on typing here until it gets a lil onger . . .</p>
+          <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
         </div>
       </div>
       <div className="blog-box blog-box3">
@@ -38,7 +38,7 @@ const Blog = () => {
           <h3>Testing the Blog</h3>
           <p>April 20, 2020</p>
           <hr />
-          <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing and gonna keep on typing here until it gets a lil onger . . .</p>
+          <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
         </div>
       </div>
       <div className="blog-box blog-box4">
@@ -49,7 +49,7 @@ const Blog = () => {
           <h3>Testing the Blog</h3>
           <p>April 20, 2020</p>
           <hr />
-          <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing and gonna keep on typing here until it gets a lil onger . . .</p>
+          <p className="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing . . .</p>
         </div>
       </div>
     </div> 

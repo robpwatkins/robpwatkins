@@ -14,20 +14,23 @@ const Contact = () => {
           </div>
           <div className="postcard-right">
             <form action="">
-              <TextField label="Name"></TextField>
               <TextField 
-                style={{marginBottom: "35px"}} 
+                label="Name"
+                style={{marginBottom: "5px"}}
+                ></TextField>
+              <TextField 
+                style={{marginBottom: "45px"}} 
                 label="Email"
                 ></TextField>
               <TextField 
                 label="Message" 
                 multiline 
-                rows={15}
+                rows={13}
                 variant="outlined"
                 ></TextField>
               <Button
                 variant="contained"
-                style={{width: "15%", marginTop: "15px"}}
+                style={{width: "15%", marginTop: "20px"}}
                 >Send</Button>
             </form>
           </div>
