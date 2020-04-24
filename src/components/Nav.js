@@ -1,18 +1,18 @@
 import React from 'react';
 import './Nav.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class Nav extends React.Component {
   state = {
-    color: 'rgba(255, 255, 255, 0.404)'
+    color: 'rgba(255, 255, 255, 0.605)',
   }
 
   handleMouseEnter = () => {
     this.setState({ color: 'white' });
   }
-
+  
   handleMouseLeave = () => {
-    this.setState({ color: 'rgba(255, 255, 255, 0.404)'})
+    this.setState({ color: 'rgba(255, 255, 255, 0.404)' })
   }
 
   render() {
@@ -22,21 +22,47 @@ class Nav extends React.Component {
         onMouseLeave={this.handleMouseLeave}
         >
         <ul>
-          <Link to="/" style={{color: `${this.state.color}`}}>
-            <li className="home">Home</li>
-          </Link>
-          <Link to="/about"style={{color: `${this.state.color}`}}>
-            <li className="about">About</li>
-          </Link>
-          <Link to="/projects"style={{color: `${this.state.color}`}}>
-            <li className="projects">Projects</li>
-          </Link>
-          <Link to="/blog"style={{color: `${this.state.color}`}}>
-            <li className="blog">Blog</li>
-          </Link>
-          <Link to="/contact"style={{color: `${this.state.color}`}}>
-            <li className="contact">Contact</li>
-          </Link>
+          <NavLink 
+            exact 
+            to="/" 
+            style={{color: `${this.state.color}`}}
+            activeStyle={{color: "white", transform: "scale(1.5)"}}
+            activeClassName="link-active"
+            >
+            <li>Home</li>
+          </NavLink>
+          <NavLink 
+            to="/about" 
+            style={{color: `${this.state.color}`}}
+            activeStyle={{color: "white", transform: "scale(1.5)"}}
+            activeClassName="link-active"
+            >
+            <li>About</li>
+          </NavLink>
+          <NavLink 
+            to="/projects" 
+            style={{color: `${this.state.color}`}}
+            activeStyle={{color: "white", transform: "scale(1.5)"}}
+            activeClassName="link-active"
+            >
+            <li>Projects</li>
+          </NavLink>
+          <NavLink 
+            to="/blog" 
+            style={{color: `${this.state.color}`}}
+            activeStyle={{color: "white", transform: "scale(1.5)"}}
+            activeClassName="link-active"
+            >
+            <li>Blog</li>
+          </NavLink>
+          <NavLink 
+            to="/contact" 
+            style={{color: `${this.state.color}`}}
+            activeStyle={{color: "white", transform: "scale(1.5"}}
+            activeClassName="link-active"
+            >
+            <li>Contact</li>
+          </NavLink>
         </ul>
       </nav>
     )
