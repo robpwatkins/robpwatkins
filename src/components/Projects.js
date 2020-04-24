@@ -16,8 +16,6 @@ const Projects = () => {
         <div className="project project2"></div>
         <div className="project project3"></div>
         <div className="project project4"></div>
-        <div className="project project5"></div>
-        <div className="project project6"></div>
       </div>
     </div>
   )
