@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import FabNav from './components/FabNav';
+import Footer from './components/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
               <Route path="/contact" component={Contact} />
             </Switch>
             <FabNav />
+            <Footer />
           </div>
         </div>
       </div>
