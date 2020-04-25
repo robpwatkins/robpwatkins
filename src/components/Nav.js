@@ -17,11 +17,11 @@ class Nav extends React.Component {
 
   render() {
     return (
-      <nav 
-        onMouseEnter={this.handleMouseEnter}
-        onMouseLeave={this.handleMouseLeave}
-        >
-        <ul>
+      <nav>
+        <ul
+          onMouseEnter={this.handleMouseEnter}
+          onMouseLeave={this.handleMouseLeave}
+          >
           <NavLink 
             exact 
             to="/" 
