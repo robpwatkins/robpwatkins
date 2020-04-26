@@ -14,15 +14,6 @@ footer {
   align-items: center;
 }
 
-.footer-box:hover {
-
-}
-
-footer img {
-  height: 75%;
-  /* animation: spin 2s linear infinite; */
-}
-
 footer p {
   font-size: 15px;
   padding: 0px 5px;
@@ -43,7 +34,7 @@ footer p {
   color: #5FD2F1;
 }
 
-@keyframes spin {
+/* @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}
+} */

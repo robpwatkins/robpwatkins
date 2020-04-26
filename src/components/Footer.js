@@ -1,6 +1,10 @@
 import React from 'react';
-import Atom from '../img/logo192.png';
+// import Atom from '../img/logo192.png';
 import './Footer.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 // import CopyrightIcon from '@material-ui/icons/Copyright'
 
 class Footer extends React.Component {
@@ -32,17 +36,17 @@ class Footer extends React.Component {
           onMouseEnter={this.handleMouseEnter}
           onMouseLeave={this.handleMouseLeave}
         >
-          <img src={Atom} alt="" style={{animation: `${this.state.animation}`}}/>
+          {/* <img src={Atom} alt="" style={{animation: `${this.state.animation}`}}/> */}
           <p>Rob Watkins</p>
           <div className="icon-box">
             <a target="_blank" href="https://www.linkedin.com/in/robpwatkins/">
-              <i className="fab fa-linkedin"></i>
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a target="_blank" href="https://github.com/robpwatkins">
-              <i className="fab fa-github"></i>
+              <FontAwesomeIcon icon={faGithub} />
             </a>
             <a target="_blank" href="https://www.instagram.com/robpwatkins/">
-              <i className="fab fa-instagram"></i>
+              <FontAwesomeIcon icon={faInstagram} />
             </a>
           </div>
           {/* <CopyrightIcon style={{fontSize: "12px"}}/> */}
