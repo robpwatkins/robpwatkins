@@ -9,7 +9,7 @@ footer {
 .footer-box {
   display: flex;
   width: 200px;
-  height: 100%;
+  height: auto;
   justify-content: center;
   align-items: center;
 }
@@ -26,15 +26,16 @@ footer p {
   font-size: 18px;
 }
 
+.icon-box a {
+  display: block;
+  /* color: rgba(255, 255, 255, 0.404); */
+}
+
 .icon-box a:visited {
   color: white;
 }
 
 .icon-box a:hover {
-  color: #5FD2F1;
+  /* color: #5FD2F1; */
+  transform: scale(1.2)
 }
-
-/* @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-} */

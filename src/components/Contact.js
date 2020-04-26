@@ -25,7 +25,7 @@ const Contact = () => {
               <TextField 
                 label="Message" 
                 multiline 
-                rows={13}
+                rows={11}
                 variant="outlined"
                 ></TextField>
               <Button

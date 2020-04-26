@@ -1,29 +1,25 @@
 import React from 'react';
-// import Atom from '../img/logo192.png';
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-// import CopyrightIcon from '@material-ui/icons/Copyright'
+import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 class Footer extends React.Component {
   state = {
     isHovered: false,
-    animation: 'none'
+    color: 'rgba(255, 255, 255, 0.404)'
   }
   
   handleMouseEnter = () => {
     this.setState({ 
-      isHovered: !this.state.isHovered, 
-      animation: 'spin 2s linear infinite'
+      isHovered: !this.state.isHovered,
+      color: 'white', 
     })
   }
   
   handleMouseLeave = () => {
     this.setState({ 
       isHovered: !this.state.isHovered,
-      animation: 'none'
+      color: 'rgba(255, 255, 255, 0.404)'
     })
   }
 
@@ -35,21 +31,32 @@ class Footer extends React.Component {
           className="footer-box"
           onMouseEnter={this.handleMouseEnter}
           onMouseLeave={this.handleMouseLeave}
+          style={{color: this.state.color}}
         >
-          {/* <img src={Atom} alt="" style={{animation: `${this.state.animation}`}}/> */}
           <p>Rob Watkins</p>
           <div className="icon-box">
-            <a target="_blank" href="https://www.linkedin.com/in/robpwatkins/">
+            <a 
+              target="_blank" 
+              href="https://www.linkedin.com/in/robpwatkins/"
+              style={{color: this.state.color}}
+            >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a target="_blank" href="https://github.com/robpwatkins">
+            <a 
+              target="_blank" 
+              href="https://github.com/robpwatkins"
+              style={{color: this.state.color}}
+            >
               <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a target="_blank" href="https://www.instagram.com/robpwatkins/">
+            <a 
+              target="_blank" 
+              href="https://www.instagram.com/robpwatkins/"
+              style={{color: this.state.color}}
+            >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </div>
-          {/* <CopyrightIcon style={{fontSize: "12px"}}/> */}
         </div>
       </footer>
     )
