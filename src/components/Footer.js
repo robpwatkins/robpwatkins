@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 class Footer extends React.Component {
@@ -64,7 +65,8 @@ class Footer extends React.Component {
           style={{color: this.state.color}}
         >
           <div className="footer-box">
-            <p>Rob Watkins</p>
+            <FontAwesomeIcon icon={faCopyright} className="copyright" />
+            <p> 2020 Rob Watkins</p>
             <div className="icon-box">
               <a 
                 target="_blank"

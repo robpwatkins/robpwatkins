@@ -15,20 +15,24 @@ footer {
 
 .footer-box {
   display: flex;
-  width: 200px;
+  width: 220px;
   height: auto;
   justify-content: center;
   align-items: center;
 }
 
+.copyright {
+  font-size: 10px;
+}
+
 footer p {
   font-size: 15px;
-  padding: 0px 5px;
+  padding: 0px 10px 0px 2px;
 }
 
 .icon-box {
   display: flex;
-  width: 30%;
+  width: 27%;
   justify-content: space-between;
   font-size: 18px;
 }
@@ -45,10 +49,4 @@ footer p {
 .icon-box a:hover {
   /* color: #5FD2F1; */
   transform: scale(1.2)
-}
-
-@media (max-width: 480px) {
-  footer p {
-    /* color: white; */
-  }
 }
