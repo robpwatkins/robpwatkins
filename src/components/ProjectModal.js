@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexDirection: 'column',
     width: '75vw',
-    height: '75vh',
+    height: '95vh',
     justifyContent: 'center',
     alignItems: 'center',
     color: 'hotpink',
@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-const AnimatedModal = () => {
+const ProjectModal = () => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -44,8 +44,8 @@ const AnimatedModal = () => {
         style={{
           display: 'flex',
           flexDirection: 'column',
-          width: '250px', 
-          height: '400px', 
+          width: '350px', 
+          height: '275px', 
           justifyContent: 'center',
           alignItems: 'center',
           color: 'hotpink',
@@ -74,4 +74,4 @@ const AnimatedModal = () => {
   )
 }
 
-export default AnimatedModal;
+export default ProjectModal;
