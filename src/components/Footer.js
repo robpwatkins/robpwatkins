@@ -11,7 +11,7 @@ class Footer extends React.Component {
   }
   
   handleMouseEnter = () => {
-    this.state.windowWidth >= 480 &&
+    this.state.windowWidth >= 600 &&
       this.setState({ 
         isHovered: true,
         color: 'white', 
@@ -19,7 +19,7 @@ class Footer extends React.Component {
   }
   
   handleMouseLeave = () => {
-    this.state.windowWidth >= 480 &&
+    this.state.windowWidth >= 600 &&
       this.setState({ 
         isHovered: false,
         color: 'rgba(255, 255, 255, 0.404)'
@@ -30,7 +30,7 @@ class Footer extends React.Component {
     let currentWindowWidth = window.visualViewport.width;
     window.addEventListener('resize', () => {
       currentWindowWidth = window.visualViewport.width
-      if (currentWindowWidth >= 480) {
+      if (currentWindowWidth >= 600) {
         this.setState({ 
           color: 'rgba(255, 255, 255, 0.404)',
           windowWidth: currentWindowWidth
@@ -42,7 +42,7 @@ class Footer extends React.Component {
         })
       }
     });
-    if (currentWindowWidth >= 480) {
+    if (currentWindowWidth >= 600) {
       this.setState({ 
         color: 'rgba(255, 255, 255, 0.404)' })
       } else {
