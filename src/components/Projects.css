@@ -52,10 +52,6 @@
   border-radius: 5px;
 }
 
-.project3, .project4, .project5, .project6 {
-  display: none;
-}
-
 
 @media (min-width: 768px) {
   .projects-nav {
