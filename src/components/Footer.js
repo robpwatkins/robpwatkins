@@ -6,21 +6,51 @@ import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-
 class Footer extends React.Component {
   state = {
     isHovered: false,
-    color: 'rgba(255, 255, 255, 0.404)'
+    color: 'rgba(255, 255, 255, 0.404)',
+    windowWidth: ''
   }
   
   handleMouseEnter = () => {
-    this.setState({ 
-      isHovered: !this.state.isHovered,
-      color: 'white', 
-    })
+    this.state.windowWidth >= 480 &&
+      this.setState({ 
+        isHovered: true,
+        color: 'white', 
+      })
   }
   
   handleMouseLeave = () => {
-    this.setState({ 
-      isHovered: !this.state.isHovered,
-      color: 'rgba(255, 255, 255, 0.404)'
-    })
+    this.state.windowWidth >= 480 &&
+      this.setState({ 
+        isHovered: false,
+        color: 'rgba(255, 255, 255, 0.404)'
+      })
+  }
+
+  componentDidMount() {
+    let currentWindowWidth = window.visualViewport.width;
+    window.addEventListener('resize', () => {
+      currentWindowWidth = window.visualViewport.width
+      if (currentWindowWidth >= 480) {
+        this.setState({ 
+          color: 'rgba(255, 255, 255, 0.404)',
+          windowWidth: currentWindowWidth
+        })
+      } else {
+        this.setState({ 
+          color: 'white',
+          windowWidth: currentWindowWidth
+        })
+      }
+    });
+    if (currentWindowWidth >= 480) {
+      this.setState({ 
+        color: 'rgba(255, 255, 255, 0.404)' })
+      } else {
+        this.setState({
+          color: 'white'
+        })
+      }
+      this.setState({ windowWidth: currentWindowWidth });
   }
 
   render() {
