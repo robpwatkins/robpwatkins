@@ -28,34 +28,39 @@ class Footer extends React.Component {
       <footer
       >
         <div 
-          className="footer-box"
+          className="footer-box-hover"
           onMouseEnter={this.handleMouseEnter}
           onMouseLeave={this.handleMouseLeave}
           style={{color: this.state.color}}
         >
-          <p>Rob Watkins</p>
-          <div className="icon-box">
-            <a 
-              target="_blank" 
-              href="https://www.linkedin.com/in/robpwatkins/"
-              style={{color: this.state.color}}
-            >
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a 
-              target="_blank" 
-              href="https://github.com/robpwatkins"
-              style={{color: this.state.color}}
-            >
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a 
-              target="_blank" 
-              href="https://www.instagram.com/robpwatkins/"
-              style={{color: this.state.color}}
-            >
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
+          <div className="footer-box">
+            <p>Rob Watkins</p>
+            <div className="icon-box">
+              <a 
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/robpwatkins/"
+                style={{color: this.state.color}}
+              >
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              <a 
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/robpwatkins"
+                style={{color: this.state.color}}
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a 
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/robpwatkins/"
+                style={{color: this.state.color}}
+              >
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+            </div>
           </div>
         </div>
       </footer>

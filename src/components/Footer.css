@@ -6,6 +6,13 @@ footer {
   align-items: center;
 }
 
+.footer-box-hover {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
 .footer-box {
   display: flex;
   width: 200px;
