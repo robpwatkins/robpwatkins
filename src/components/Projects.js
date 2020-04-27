@@ -18,27 +18,27 @@ const Projects = () => {
         <Grid 
           container 
           direction="row"
-          justify="center" 
+          justify="center"
           spacing={3}
-          style={{width: '95vw', height: '76vh'}}
+          style={{width: '85%', height: '572px'}}
           className="projects-grid"
           >
-          <Grid item className="projects-item">
+          <Grid item xs={12} sm={6} md={4} lg={3} className="projects-item">
             <ProjectModal />
           </Grid>
-          <Grid item className="projects-item">
+          <Grid item xs={12} sm={6} md={4} lg={3} className="projects-item">
             <ProjectModal />
           </Grid>
-          <Grid item className="projects-item">
+          <Grid item xs={12} sm={6} md={4} lg={3} className="projects-item">
             <ProjectModal />
           </Grid>
-          <Grid item className="projects-item">
+          <Grid item xs={12} sm={6} md={4} lg={3} className="projects-item">
             <ProjectModal />
           </Grid>
-          <Grid item className="projects-item">
+          <Grid item xs={12} sm={6} md={4} lg={3} className="projects-item">
             <ProjectModal />
           </Grid>
-          <Grid item className="projects-item">
+          <Grid item xs={12} sm={6} md={4} lg={3} className="projects-item">
             <ProjectModal />
           </Grid>
         </Grid>

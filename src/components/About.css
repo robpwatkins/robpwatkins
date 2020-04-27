@@ -112,7 +112,7 @@
   .about-container {
     display: flex;
     justify-content: space-around;
-    max-height: 630px;
+    /* max-height: 630px; */
     width: 100%;
     padding: 20px 15px 5px 15px;
     border-radius: 10px;
