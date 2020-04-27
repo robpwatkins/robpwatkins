@@ -17,7 +17,6 @@ class Nav extends React.Component {
 
   handleClick = () => {
     this.setState({ color: 'rgba(255, 255, 255, 0.404)' })
-    console.log('heyoo')
   }
 
   render() {
