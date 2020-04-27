@@ -4,6 +4,7 @@
   background-image: url(../img/REPLACEproject-thumb1.png);
   background-size: cover;
   background-position: center;
+  border-radius: 3px;
 }
 
 .project-thumb {
