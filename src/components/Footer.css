@@ -50,3 +50,9 @@ footer p {
   /* color: #5FD2F1; */
   transform: scale(1.2)
 }
+
+@media (max-width: 600px) {
+  .icon-box a:hover {
+    transform: none;
+  }
+}

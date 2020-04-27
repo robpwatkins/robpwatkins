@@ -5,9 +5,9 @@
 .fab-nav-box {
   display: flex;
   width: 100%;
-  min-height: 15vh;
+  min-height: 10%;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   z-index: 2;
 }
 
