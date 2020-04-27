@@ -4,28 +4,41 @@ import { NavLink } from 'react-router-dom';
 
 class Nav extends React.Component {
   state = {
+    navHovered: false,
     color: 'rgba(255, 255, 255, 0.404)',
   }
 
   handleMouseEnter = () => {
-    this.setState({ color: 'white' });
+    this.setState({ 
+      navHovered: true,
+      color: 'white' 
+    });
   }
   
   handleMouseLeave = () => {
-    this.setState({ color: 'rgba(255, 255, 255, 0.404)' })
+    this.setState({ 
+      navHovered: false,
+      color: 'rgba(255, 255, 255, 0.404)' 
+    });
+  }
+
+  handleMouseMove = () => {
+    this.state.navHovered &&
+    this.setState({ color: 'white' });
   }
 
   handleClick = () => {
-    this.setState({ color: 'rgba(255, 255, 255, 0.404)' })
+    this.setState({ color: 'rgba(255, 255, 255, 0.404)' });
   }
 
   render() {
     return (
-      <nav>
-        <ul
-          onMouseEnter={this.handleMouseEnter}
-          onMouseLeave={this.handleMouseLeave}
-          >
+      <nav
+        onMouseEnter={this.handleMouseEnter}
+        onMouseLeave={this.handleMouseLeave}
+        onMouseMove={this.handleMouseMove}
+      >
+        <ul>
           <NavLink 
             exact 
             to="/"
