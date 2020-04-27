@@ -1,6 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Modal from '@material-ui/core/Modal';
+import { Modal, Button } from '@material-ui/core';
+import '../components/ProjectModal.css';
+import ProjectImg from '../img/REPLACEproject-thumb1.png';
 // import Backdrop from '@material-ui/core/Backdrop';
 // import Fade from '@material-ui/core/Fade';
 
@@ -17,11 +19,13 @@ const useStyles = makeStyles(theme => ({
     height: '95vh',
     justifyContent: 'center',
     alignItems: 'center',
-    color: 'hotpink',
+    position: 'absolute',
+    top: '0',
     backgroundColor: theme.palette.background.paper,
+    backgroundSize: 'cover',
     // border: '2px solid #000',
     boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 3, 4)
+    // padding: theme.spacing(2, 3, 4)
   }
 }))
 
@@ -39,38 +43,30 @@ const ProjectModal = () => {
 
   return (
     <div>
-      <div 
-        onClick={handleOpen} 
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          width: '350px', 
-          height: '275px', 
-          justifyContent: 'center',
-          alignItems: 'center',
-          color: 'hotpink',
-          background: 'white',
-          border: '2px solid gray'}}
-          >
-            Yup.
+      <div className="background-thumb">
+        <div className="project-thumb">
+          <Button 
+            variant="contained"
+            onClick={handleOpen}
+            >
+              VIEW SITE
+          </Button>
         </div>
+      </div>
       <Modal
-        // aria-labelledby="transition-modal-title"
-        // aria-describedby="transition-modal-description"
         className={classes.modal}
         open={open}
         onClose={handleClose}
-        // closeAfterTransition
-        // BackdropComponent={Backdrop}
-        // BackdropProps={{
-        //   timeout: 500,
-        // }}
-      >
-        {/* <Fade in={open}> */}
-          <div className={classes.paper}>
-            <h2>YUUUUUUUUP</h2>
+        >
+        <div className={classes.paper}>
+          <div className="modal-content">
+            <img src={ProjectImg} alt=""/>
+            <div className="project-info">
+              <h2>Project 1</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quo nobis dolores maxime debitis laboriosam molestias, deleniti unde sint cupiditate ratione esse iure amet repellendus quisquam omnis et, possimus sit.</p>
+            </div>
           </div>
-        {/* </Fade> */}
+        </div>
       </Modal>
     </div>
   )

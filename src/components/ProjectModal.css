@@ -1,0 +1,43 @@
+.background-thumb {
+  width: 261px;
+  height: 225px;
+  background-image: url(../img/REPLACEproject-thumb1.png);
+  background-size: cover;
+  border-radius: 3px;
+}
+
+.project-thumb {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  height: 100%; 
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0 15px 0;
+  border-radius: 3px;
+  box-shadow: 5px 5px 10px 2px rgb(24, 26, 32);
+  opacity: 0;
+}
+
+.project-thumb:hover {
+  opacity: 1;
+}
+
+.modal-content {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+}
+
+.project-info {
+  padding: 10px 25px 25px 25px;
+}
+
+.project-info h2 {
+  font-weight: 600;
+  padding: 0 0 10px 0;
+}
