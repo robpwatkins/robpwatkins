@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 class Nav extends React.Component {
   state = {
-    color: 'rgba(255, 255, 255, 0.605)',
+    color: 'rgba(255, 255, 255, 0.404)',
   }
 
   handleMouseEnter = () => {
@@ -13,6 +13,11 @@ class Nav extends React.Component {
   
   handleMouseLeave = () => {
     this.setState({ color: 'rgba(255, 255, 255, 0.404)' })
+  }
+
+  handleClick = () => {
+    this.setState({ color: 'rgba(255, 255, 255, 0.404)' })
+    console.log('heyoo')
   }
 
   render() {
@@ -24,7 +29,8 @@ class Nav extends React.Component {
           >
           <NavLink 
             exact 
-            to="/" 
+            to="/"
+            onClick={this.handleClick}
             style={{color: `${this.state.color}`}}
             activeStyle={{color: "white", transform: "scale(1.5)"}}
             activeClassName="link-active"
@@ -32,7 +38,8 @@ class Nav extends React.Component {
             <li>Home</li>
           </NavLink>
           <NavLink 
-            to="/about" 
+            to="/about"
+            onClick={this.handleClick}
             style={{color: `${this.state.color}`}}
             activeStyle={{color: "white", transform: "scale(1.5)"}}
             activeClassName="link-active"
@@ -40,7 +47,8 @@ class Nav extends React.Component {
             <li>About</li>
           </NavLink>
           <NavLink 
-            to="/projects" 
+            to="/projects"
+            onClick={this.handleClick}
             style={{color: `${this.state.color}`}}
             activeStyle={{color: "white", transform: "scale(1.5)"}}
             activeClassName="link-active"
@@ -48,7 +56,8 @@ class Nav extends React.Component {
             <li>Projects</li>
           </NavLink>
           <NavLink 
-            to="/blog" 
+            to="/blog"
+            onClick={this.handleClick}
             style={{color: `${this.state.color}`}}
             activeStyle={{color: "white", transform: "scale(1.5)"}}
             activeClassName="link-active"
@@ -56,7 +65,8 @@ class Nav extends React.Component {
             <li>Blog</li>
           </NavLink>
           <NavLink 
-            to="/contact" 
+            to="/contact"
+            onClick={this.handleClick}
             style={{color: `${this.state.color}`}}
             activeStyle={{color: "white", transform: "scale(1.5"}}
             activeClassName="link-active"

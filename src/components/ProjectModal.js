@@ -49,7 +49,9 @@ const ProjectModal = () => {
           justifyContent: 'center',
           alignItems: 'center',
           color: 'hotpink',
-          background: 'white'}}>
+          background: 'white',
+          border: '2px solid gray'}}
+          >
             Yup.
         </div>
       <Modal
