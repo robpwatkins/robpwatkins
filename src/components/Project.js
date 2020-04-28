@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardMedia, CardContent, Typography, Button } from '@material-ui/core';
+import { Card, CardMedia, Button } from '@material-ui/core';
 import '../components/Project.css';
 
 const Project = (props) => {

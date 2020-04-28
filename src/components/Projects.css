@@ -14,7 +14,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 90%;
+  height: 100%;
   /* padding: 45px 0 0 0; */
   /* background: rgba(24, 26, 32, 0.692); */
   border-radius: 3px;
@@ -34,9 +34,10 @@
   display: flex;
   width: 100%;
   height: auto;
+  justify-content: space-around;
   color: var(--text-inactive);
   font-size: calc(7px + 1vw);
-  justify-content: space-around;
+  font-weight: 500;
   align-items: center;
   list-style-type: none;
 }
