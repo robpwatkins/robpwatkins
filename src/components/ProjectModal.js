@@ -54,7 +54,7 @@ const ProjectModal = (props) => {
           <div className="modal-content">
             <img src={props.projectImg} alt=""/>
             <div className="project-info">
-              <h2>Project 1</h2>
+              <h2>{props.projectName}</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quo nobis dolores maxime debitis laboriosam molestias, deleniti unde sint cupiditate ratione esse iure amet repellendus quisquam omnis et, possimus sit.</p>
             </div>
           </div>
