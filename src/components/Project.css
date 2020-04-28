@@ -1,0 +1,34 @@
+.card-content {
+  position: relative;
+}
+
+.project-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 21, 28, 0.671);
+  position: absolute;
+  padding: 0 0 15px 0;
+  opacity: 0;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-overlay:hover {
+  opacity: 1;
+}
+
+.project-overlay h2 {
+  color: white;
+  font-size: calc(10px + 3vw);
+  font-weight: 600;
+}

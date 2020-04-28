@@ -1,10 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Modal, Button } from '@material-ui/core';
+import { Modal } from '@material-ui/core';
 import '../components/ProjectModal.css';
-import ProjectImg from '../img/REPLACEproject-thumb1.png';
-// import Backdrop from '@material-ui/core/Backdrop';
-// import Fade from '@material-ui/core/Fade';
+import Project from '../components/Project';
 
 const useStyles = makeStyles(theme => ({
   modal: {
@@ -16,24 +14,23 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexDirection: 'column',
     width: '75vw',
-    height: '95vh',
+    height: 'auto',
     justifyContent: 'center',
     alignItems: 'center',
     position: 'absolute',
     top: '0',
     backgroundColor: theme.palette.background.paper,
     backgroundSize: 'cover',
-    // border: '2px solid #000',
     boxShadow: theme.shadows[5],
-    // padding: theme.spacing(2, 3, 4)
   }
 }))
 
-const ProjectModal = () => {
+const ProjectModal = (props) => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => {
+    console.log('heyoo');
     setOpen(true);
   }
 
@@ -43,16 +40,11 @@ const ProjectModal = () => {
 
   return (
     <div>
-      <div className="background-thumb">
-        <div className="project-thumb">
-          <Button 
-            variant="contained"
-            onClick={handleOpen}
-            >
-              VIEW SITE
-          </Button>
-        </div>
-      </div>
+      <Project 
+        projectImg={props.projectImg} 
+        name={props.projectName} 
+        handleOpen={handleOpen}
+        />
       <Modal
         className={classes.modal}
         open={open}
@@ -60,7 +52,7 @@ const ProjectModal = () => {
         >
         <div className={classes.paper}>
           <div className="modal-content">
-            <img src={ProjectImg} alt=""/>
+            <img src={props.projectImg} alt=""/>
             <div className="project-info">
               <h2>Project 1</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quo nobis dolores maxime debitis laboriosam molestias, deleniti unde sint cupiditate ratione esse iure amet repellendus quisquam omnis et, possimus sit.</p>
