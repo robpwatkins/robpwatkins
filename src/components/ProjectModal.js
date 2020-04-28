@@ -21,6 +21,7 @@ const useStyles = makeStyles(theme => ({
     top: '0',
     backgroundColor: theme.palette.background.paper,
     backgroundSize: 'cover',
+    outline: 'none'
     // boxShadow: theme.shadows[7],
   }
 }))
