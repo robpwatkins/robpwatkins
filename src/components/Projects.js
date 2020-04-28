@@ -56,7 +56,6 @@ class Projects extends React.Component {
           {this.state.projectType === 'all' &&
             <Grid 
               container 
-              direction="row"
               justify="center"
               spacing={2}
               // wrap
@@ -81,7 +80,6 @@ class Projects extends React.Component {
             this.state.projectType === 'react' &&
             <Grid 
               container 
-              direction="row"
               justify="center"
               spacing={2}
               // wrap
@@ -100,7 +98,6 @@ class Projects extends React.Component {
             this.state.projectType === 'static' &&
             <Grid 
               container 
-              direction="row"
               justify="center"
               spacing={2}
               // wrap
@@ -116,7 +113,6 @@ class Projects extends React.Component {
             this.state.projectType === 'javascript' &&
             <Grid 
               container 
-              direction="row"
               justify="center"
               spacing={2}
               // wrap

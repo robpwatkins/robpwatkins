@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
     top: '0',
     backgroundColor: theme.palette.background.paper,
     backgroundSize: 'cover',
-    boxShadow: theme.shadows[5],
+    // boxShadow: theme.shadows[7],
   }
 }))
 
@@ -30,7 +30,6 @@ const ProjectModal = (props) => {
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => {
-    console.log('heyoo');
     setOpen(true);
   }
 
