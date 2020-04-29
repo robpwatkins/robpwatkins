@@ -9,7 +9,7 @@ import ProjectImg4 from '../img/BuddhaBlessings.png';
 
 class Projects extends React.Component {
   state = {
-    projectType: 'react'
+    projectType: 'all'
   }
 
   handleClick = (event) => {
