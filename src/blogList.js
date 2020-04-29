@@ -13,13 +13,6 @@ export const blogList = [
     "date": "April 24, 2020",
     "description": "Testing a blog can be very rewarding, unless the blog upon which one is running tests turns out to be . . ."
   }
-  // {
-  //   "link" : "https://medium.com/@robpwatkins/test-portfolio-blog-50d83b856c92",
-  //   "img": "../img/DogBlogger4.jpg",
-  //   "name" : "Blog Test 3",
-  //   "date": "April 25, 2020",
-  //   "description": "If you retain one piece of information from anything I've said let it be this: the only one true way to happiness is . . ."
-  // }
 ]
 
 export default blogList;
