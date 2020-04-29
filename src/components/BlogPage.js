@@ -1,14 +1,10 @@
 import React from 'react';
-import './BlogPage.css';
-import Blog from './Blog';
-import DogBlogger1 from '../img/DogBlogger.jpg';
-import DogBlogger3 from '../img/DogBlogger3.jpg';
+import Blogs from './Blogs';
 
 const BlogPage = () => {
   return (
     <div className="blog-container">
-      <Blog blogImg={DogBlogger1} blogName="Test Blog 1"/>
-      <Blog blogImg={DogBlogger3} blogName="Test Blog 2" />
+      <Blogs />
     </div> 
   )
 }

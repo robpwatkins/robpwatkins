@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.css';
 import { TextField, Button } from '@material-ui/core';
-import { withStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { grey } from '@material-ui/core/colors';
 
 const theme = createMuiTheme({
