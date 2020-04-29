@@ -72,7 +72,7 @@ class Projects extends React.Component {
                 <ProjectModal projectImg={ProjectImg3} projectName="Website Rebuild" />
               </Grid>
               <Grid item xs={12} sm={6} xl={3} className="projects-item">
-                <ProjectModal projectImg={ProjectImg4} projectName="Buddha Blessings" />
+                <ProjectModal projectImg={ProjectImg4} projectName="Click Counter" />
               </Grid>
             </Grid>
           }
