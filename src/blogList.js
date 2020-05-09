@@ -8,7 +8,7 @@ export const blogList = [
   },
   {
     "link" : "https://medium.com/@robpwatkins/test-portfolio-blog-50d83b856c92",
-    "img": require("./img/DogBlogger4.jpeg"),
+    "img": require("./img/DogBlogger3.jpg"),
     "name" : "I Blogged and Now Look At Me!",
     "date": "April 24, 2020",
     "description": "Testing a blog can be very rewarding, unless the blog upon which one is running tests turns out to be . . ."
