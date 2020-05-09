@@ -14,12 +14,12 @@ const Blogs = () => {
             <div className="blog-info">
               <h3>{blog.name}</h3>
               <div className="blog-info-bottom">
-                <div className="date-hr-box">
-                  <p>{blog.date}</p>
-                  <hr />
-                </div>
-                <p className="preview-text">{blog.description}</p>
+              <div className="date-hr-box">
+                <p>{blog.date}</p>
+                <hr />
               </div>
+              <p className="preview-text">{blog.description}</p>
+            </div>
             </div>
           </div>
         )
