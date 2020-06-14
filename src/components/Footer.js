@@ -1,103 +1,97 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-class Footer extends React.Component {
-  state = {
-    isHovered: false,
-    color: 'rgba(255, 255, 255, 0.404)',
-    windowWidth: ''
+const Footer = () => {
+  const [isHovered, setIsHovered] = useState(false);
+  
+  const handleMouseEnter = () => {
+    setIsHovered(true);
   }
   
-  handleMouseEnter = () => {
-    this.state.windowWidth >= 600 &&
-      this.setState({ 
-        isHovered: true,
-        color: 'white', 
-      })
-  }
-  
-  handleMouseLeave = () => {
-    this.state.windowWidth >= 600 &&
-      this.setState({ 
-        isHovered: false,
-        color: 'rgba(255, 255, 255, 0.404)'
-      })
+  const handleMouseLeave = () => {
+    setIsHovered(false);
   }
 
-  componentDidMount() {
-    let currentWindowWidth = window.visualViewport.width;
-    window.addEventListener('resize', () => {
-      currentWindowWidth = window.visualViewport.width
-      if (currentWindowWidth >= 600) {
-        this.setState({ 
-          color: 'rgba(255, 255, 255, 0.404)',
-          windowWidth: currentWindowWidth
-        })
-      } else {
-        this.setState({ 
-          color: 'white',
-          windowWidth: currentWindowWidth
-        })
-      }
-    });
-    if (currentWindowWidth >= 600) {
-      this.setState({ 
-        color: 'rgba(255, 255, 255, 0.404)' })
-      } else {
-        this.setState({
-          color: 'white'
-        })
-      }
-      this.setState({ windowWidth: currentWindowWidth });
-  }
+  // componentDidMount() {
+  //   let currentWindowWidth = window.visualViewport.width;
+  //   window.addEventListener('resize', () => {
+  //     currentWindowWidth = window.visualViewport.width
+  //     if (currentWindowWidth >= 600) {
+  //       this.setState({ 
+  //         color: 'rgba(255, 255, 255, 0.404)',
+  //         windowWidth: currentWindowWidth
+  //       })
+  //     } else {
+  //       this.setState({ 
+  //         color: 'white',
+  //         windowWidth: currentWindowWidth
+  //       })
+  //     }
+  //   });
+  //   if (currentWindowWidth >= 600) {
+  //     this.setState({ 
+  //       color: 'rgba(255, 255, 255, 0.404)' })
+  //     } else {
+  //       this.setState({
+  //         color: 'white'
+  //       })
+  //     }
+  //     this.setState({ windowWidth: currentWindowWidth });
+  // }
 
-  render() {
-    return (
-      <footer
+  return (
+    <footer
+    >
+      <div 
+        className="footer-box-hover"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        // style={{color: this.state.color}}
       >
-        <div 
-          className="footer-box-hover"
-          onMouseEnter={this.handleMouseEnter}
-          onMouseLeave={this.handleMouseLeave}
-          style={{color: this.state.color}}
-        >
-          <div className="footer-box">
-            <FontAwesomeIcon icon={faCopyright} className="copyright" />
-            <p> 2020 Rob Watkins</p>
-            <div className="icon-box">
-              <a 
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.linkedin.com/in/robpwatkins/"
-                style={{color: this.state.color}}
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-              <a 
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/robpwatkins"
-                style={{color: this.state.color}}
-              >
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-              <a 
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.instagram.com/robpwatkins/"
-                style={{color: this.state.color}}
-              >
-                <FontAwesomeIcon icon={faInstagram} />
-              </a>
-            </div>
+        <div className="footer-box">
+          <FontAwesomeIcon icon={faCopyright} className="copyright" />
+          <a 
+            href="mailto: robpwatkins@gmail.com"
+            className={isHovered ? "hovered" : ""}
+          >
+            2020 robpwatkins@gmail.com
+          </a>
+          <div className="icon-box">
+            <a 
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/robpwatkins/"
+              className={isHovered ? "hovered" : ""}
+              // style={{color: this.state.color}}
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a 
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/robpwatkins"
+              className={isHovered ? "hovered" : ""}
+              // style={{color: this.state.color}}
+            >
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a 
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/robpwatkins/"
+              className={isHovered ? "hovered" : ""}
+              // style={{color: this.state.color}}
+            >
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
           </div>
         </div>
-      </footer>
-    )
-  }
+      </div>
+    </footer>
+  )
 }
 
 export default Footer;

@@ -16,7 +16,7 @@ footer {
 
 .footer-box {
   display: flex;
-  width: 220px;
+  width: 350px;
   height: auto;
   justify-content: center;
   align-items: center;
@@ -26,14 +26,18 @@ footer {
   font-size: 10px;
 }
 
-footer p {
+footer a {
   font-size: 15px;
   padding: 0px 10px 0px 2px;
 }
+/* 
+footer a:hover {
+  color: white;
+} */
 
 .icon-box {
   display: flex;
-  width: 27%;
+  width: 17%;
   justify-content: space-between;
   font-size: 18px;
 }
