@@ -9,12 +9,6 @@ const FabNav = () => {
   const [height, setHeight] = useState('0');
   const [display, setDisplay] = useState('none');
   const [transform, setTransform] = useState('none');
-  // state = {
-  //   clicked: false,
-  //   height: '0',
-  //   display: 'none',
-  //   transform: 'none'
-  // }
 
   const handleClick = () => {
     let newIsClicked = !isClicked;
@@ -58,7 +52,7 @@ const FabNav = () => {
             >
             <li>Projects</li>
           </NavLink>
-          <NavLink 
+          {/* <NavLink 
             to="/blog"
             onClick={handleClick}
             activeStyle={{transform: "scale(1.5)"}} 
@@ -71,7 +65,7 @@ const FabNav = () => {
             activeStyle={{transform: "scale(1.5)"}} 
             >
             <li>Contact</li>
-          </NavLink>
+          </NavLink> */}
         </ul>
       </div>
       <Fab className="fabby" onClick={handleClick}>
