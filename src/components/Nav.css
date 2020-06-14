@@ -26,9 +26,14 @@ nav {
     transform: scale(1.5);
   }
 
+  .hovered {
+    color: white;
+  }
+
   a {
     display: block;
     text-decoration: none;
+    color: rgba(255, 255, 255, 0.404);
   }
 
   .link-active li:hover {
