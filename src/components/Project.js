@@ -10,7 +10,6 @@ const Project = (props) => {
           <div className="overlay-content">
             <h2>{props.name}</h2>
             <Button 
-              // raised
               variant="contained" 
               onClick={props.handleOpen}
               className="button"
@@ -22,7 +21,10 @@ const Project = (props) => {
         <CardMedia 
           component="img"
           image={props.projectImg}
-          style={{padding: "0"}}>
+          style={{padding: "0"}}
+          blurb={props.blurb}
+          link={props.link}
+        >
         </CardMedia>
       </div>
     </Card>

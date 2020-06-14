@@ -55,7 +55,8 @@ const ProjectModal = (props) => {
             <img src={props.projectImg} alt=""/>
             <div className="project-info">
               <h2>{props.projectName}</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quo nobis dolores maxime debitis laboriosam molestias, deleniti unde sint cupiditate ratione esse iure amet repellendus quisquam omnis et, possimus sit.</p>
+              <p>{props.blurb}</p>
+              <a href={props.link} target="_blank">View live site on GitHub Pages</a>
             </div>
           </div>
         </div>

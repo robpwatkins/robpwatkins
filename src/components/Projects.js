@@ -60,7 +60,12 @@ const Projects = () => {
             className="projects-grid"
             >
             <Grid item xs={12} sm={6} xl={3} className="projects-item">
-              <ProjectModal projectImg={ProjectImg2} projectName="Solitaire w/ Hooks" />
+              <ProjectModal 
+                projectImg={ProjectImg2} 
+                projectName="Solitaire w/ Hooks" 
+                blurb="Classic solitaire game built completely from scratch using hooks."
+                link="https://robpwatkins.github.io/solitaire-final/"  
+              />
             </Grid>
             <Grid item xs={12} sm={6} xl={3} className="projects-item">
               <ProjectModal projectImg={ProjectImg1} projectName="Redux Thunk" />
