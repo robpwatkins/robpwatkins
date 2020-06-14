@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Nav.css';
 import { NavLink } from 'react-router-dom';
 
@@ -67,7 +67,7 @@ class Nav extends React.Component {
             >
             <li>Projects</li>
           </NavLink>
-          <NavLink 
+          {/* <NavLink 
             to="/blog"
             onClick={this.handleClick}
             style={{color: `${this.state.color}`}}
@@ -84,7 +84,7 @@ class Nav extends React.Component {
             activeClassName="link-active"
             >
             <li>Contact</li>
-          </NavLink>
+          </NavLink> */}
         </ul>
       </nav>
     )

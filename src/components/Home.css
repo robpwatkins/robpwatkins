@@ -56,7 +56,7 @@
 
 @media (min-width: 768px) {
   .title-box {
-    height: 65vh;
+    /* height: 65vh; */
   }
 
   .first-name {
