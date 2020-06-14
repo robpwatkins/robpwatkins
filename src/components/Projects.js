@@ -79,7 +79,7 @@ const Projects = () => {
               <ProjectModal 
                 projectImg={ProjectImg3} 
                 projectName="Website Rebuild"
-                blurb="An exercise in recreating a live website visually to resemble it as precicely as possible."
+                blurb="An exercise in recreating a live website visually to resemble it as precicely as possible (original: www.tequila512.com)."
                 link="https://robpwatkins.github.io/ACA_web101_Rob_Watkins/src/checkpoint-2/landing.checkpoint-2-2.html"
             />
             </Grid>
