@@ -51,11 +51,10 @@ const Footer = () => {
         onMouseLeave={handleMouseLeave}
         // style={{color: this.state.color}}
       >
-        <div className="footer-box">
+        <div className={!isHovered ? "footer-box" : "footer-box hovered"}>
           <FontAwesomeIcon icon={faCopyright} className="copyright" />
           <a 
             href="mailto: robpwatkins@gmail.com"
-            className={isHovered ? "hovered" : ""}
           >
             2020 robpwatkins@gmail.com
           </a>
@@ -64,7 +63,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.linkedin.com/in/robpwatkins/"
-              className={isHovered ? "hovered" : ""}
+              // className={isHovered ? "hovered" : ""}
               // style={{color: this.state.color}}
             >
               <FontAwesomeIcon icon={faLinkedin} />
@@ -73,7 +72,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/robpwatkins"
-              className={isHovered ? "hovered" : ""}
+              // className={isHovered ? "hovered" : ""}
               // style={{color: this.state.color}}
             >
               <FontAwesomeIcon icon={faGithub} />
@@ -82,7 +81,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.instagram.com/robpwatkins/"
-              className={isHovered ? "hovered" : ""}
+              // className={isHovered ? "hovered" : ""}
               // style={{color: this.state.color}}
             >
               <FontAwesomeIcon icon={faInstagram} />

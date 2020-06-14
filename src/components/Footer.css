@@ -20,6 +20,11 @@ footer {
   height: auto;
   justify-content: center;
   align-items: center;
+  color: rgba(255, 255, 255, 0.404);
+}
+
+.hovered {
+  color: white;
 }
 
 .copyright {
@@ -29,6 +34,7 @@ footer {
 footer a {
   font-size: 15px;
   padding: 0px 10px 0px 2px;
+  color: inherit;
 }
 /* 
 footer a:hover {
